@@ -75,7 +75,7 @@ class DataCollector:
             json.dump(r, file, indent=4)
 
     def collect_all_data(self, intervals: int = 10) -> None:
-        # self._fetch_locations(intervals)
+        self._fetch_locations(intervals)
         self._fetch_stops()
         self._fetch_routes()
         self._get_stops_for_line()
